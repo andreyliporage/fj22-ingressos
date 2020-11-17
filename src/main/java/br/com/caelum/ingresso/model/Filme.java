@@ -72,7 +72,7 @@ public class Filme {
     }
 
 	public BigDecimal getPreco() {
-		return preco;
+		return preco.setScale(2, BigDecimal.ROUND_HALF_UP);
 	}
 
 	public void setPreco(BigDecimal preco) {
